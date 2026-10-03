@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Règles de confidentialité — Maclean</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    max-width: 38rem; margin: 0 auto; padding: 4rem 1.5rem;
+    background: Canvas; color: CanvasText;
+  }
+  h1 { font-size: 1.7rem; line-height: 1.2; margin: 0 0 .3rem; }
+  .date { color: color-mix(in srgb, CanvasText 55%, Canvas); margin: 0 0 2.5rem; font-size: .9rem; }
+  h2 { font-size: 1.05rem; margin: 2.2rem 0 .6rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  footer { margin-top: 3rem; padding-top: 1.2rem; font-size: .875rem;
+           border-top: 1px solid color-mix(in srgb, CanvasText 15%, Canvas);
+           color: color-mix(in srgb, CanvasText 55%, Canvas); }
+  a { color: inherit; }
+</style>
+
+<h1>Règles de confidentialité</h1>
+<p class="date">Maclean — en vigueur au 3 octobre 2026</p>
+
+<h2>Aucune donnée n'est collectée</h2>
+<p>
+  Maclean ne collecte, ne stocke et ne transmet aucune donnée personnelle.
+  L'application ne comporte ni mesure d'audience, ni traceur, ni télémétrie.
+  Le développeur n'a accès à aucun fichier, nom de fichier ou identifiant
+  d'utilisateur.
+</p>
+
+<h2>Comment circulent les fichiers</h2>
+<p>
+  Les fichiers sont transférés directement entre l'ordinateur de l'utilisateur
+  et son propre compte Google&nbsp;Drive, par connexion chiffrée. Aucun serveur
+  appartenant au développeur n'intervient dans ce transfert et aucune copie
+  n'est conservée ailleurs.
+</p>
+
+<h2>Accès à Google Drive</h2>
+<p>
+  L'application demande le champ d'application
+  <code>https://www.googleapis.com/auth/drive.file</code>. Ce champ limite
+  l'accès aux seuls fichiers créés par l'application&nbsp;: le reste du contenu
+  de Google&nbsp;Drive lui demeure inaccessible. Cette restriction est appliquée
+  par Google.
+</p>
+<p>
+  L'usage des données issues des API Google respecte la
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">politique
+  relative aux données utilisateur des services API Google</a>, y compris ses
+  exigences d'utilisation limitée.
+</p>
+
+<h2>Jetons d'authentification</h2>
+<p>
+  Le jeton d'accès délivré par Google est conservé uniquement sur l'ordinateur
+  de l'utilisateur, dans le fichier de configuration local. Il n'est transmis
+  à personne.
+</p>
+
+<h2>Révoquer l'accès</h2>
+<p>
+  L'autorisation peut être retirée à tout moment depuis
+  <a href="https://myaccount.google.com/permissions">la page des accès du compte
+  Google</a>. Les fichiers déjà déposés sur Drive restent la propriété de
+  l'utilisateur et ne sont pas affectés.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Toute question peut être adressée à
+  <a href="mailto:dosus4@gmail.com">dosus4@gmail.com</a>.
+</p>
+
+<footer><a href="index.html">← Maclean</a></footer>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maclean</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    max-width: 38rem; margin: 0 auto; padding: 4rem 1.5rem;
+    background: Canvas; color: CanvasText;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.15; margin: 0 0 .4rem; }
+  .sub { color: color-mix(in srgb, CanvasText 55%, Canvas); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.05rem; margin: 2.2rem 0 .6rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  footer { margin-top: 3rem; padding-top: 1.2rem; font-size: .875rem;
+           border-top: 1px solid color-mix(in srgb, CanvasText 15%, Canvas);
+           color: color-mix(in srgb, CanvasText 55%, Canvas); }
+  a { color: inherit; }
+</style>
+
+<h1>Maclean</h1>
+<p class="sub">Utilitaire personnel de sauvegarde de fichiers vers Google&nbsp;Drive.</p>
+
+<h2>Ce que fait l'application</h2>
+<p>
+  Maclean copie des dossiers de travail depuis un Mac vers le compte Google&nbsp;Drive
+  de son propre utilisateur. Les fichiers sont transférés directement entre
+  l'ordinateur et Drive&nbsp;; ils ne transitent par aucun serveur intermédiaire.
+</p>
+
+<h2>Accès demandé à Google Drive</h2>
+<p>
+  L'application utilise le champ d'application <code>drive.file</code>, le plus
+  restreint que propose l'API&nbsp;Drive. Concrètement&nbsp;:
+</p>
+<ul>
+  <li>elle n'accède qu'aux fichiers qu'elle a elle-même créés&nbsp;;</li>
+  <li>elle ne peut ni lire ni modifier le reste du Drive de l'utilisateur&nbsp;;</li>
+  <li>cette limite est appliquée par Google, pas seulement promise ici.</li>
+</ul>
+
+<h2>Données collectées</h2>
+<p>Aucune. Voir les <a href="privacy.html">règles de confidentialité</a>.</p>
+
+<footer>
+  Contact&nbsp;: <a href="mailto:dosus4@gmail.com">dosus4@gmail.com</a> ·
+  <a href="privacy.html">Règles de confidentialité</a>
+</footer>
+</html>
